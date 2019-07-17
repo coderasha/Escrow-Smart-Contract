@@ -12,8 +12,9 @@ contract Escrow{
      
      modifier onlyBuyer{require(msg.sender==buyer);_;}
      
-     
-     constructor(address _buyer, address _seller)public{
+     // Define the constructor
+    
+    constructor(address _buyer, address _seller)public{
           buyer= _buyer;
           seller= _seller;
         owner= msg.sender;
